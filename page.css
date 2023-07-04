@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,300;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body {
+    background-color: #032D7B;
+}
+header {
+    z-index: 999;
+    position: absolute;
+    width: 100%;
+    background-color: transparent;
+}
+.navigation {
+    position: relative;
+    max-width: 1300px;
+    padding: 0 30px;
+    height: 70px;
+    margin: 0 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+}
+
+.navigation .logo a{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navigation-items {
+    display: flex;
+}
+
+.navigation-items li {
+    list-style: none;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 9px 15px;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+}
+
+header .navigation-items li a {
+    text-decoration: none;
+    position: relative;
+    font-size: 1em;
+    transition: 0.3s ease;
+    color: #fff;
+}
+
+.navigation .navigation-items li a::before {
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+.navigation .navigation-items li a:hover:before {
+    width: 100%;
+}
+
+.mega-box {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 0 30px;
+    top: 100px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.navigation-items li:hover .mega-box {
+    transition: all 0.6s ease;
+    top: 54px;
+    opacity: 1;
+    visibility: visible;
+}
+.content1 {
+    background: #032D7B;
+    border: 10px;
+    padding: 25px 40px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.main {
+    width: 25%;
+    line-height: 45px;
+}
+
+.navigation-items li a {
+    color: #fff;
+}
+
+.mega-links {
+    margin-left: -38px;
+    border-left: 2px solid #fff;
+}
+
+.mega-links li {
+    padding: 0 20px;
+}
+
+.mega-links li a {
+    position: relative;
+    color: #fff;
+    font-size: 1em;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.navigation-items .mega-box .mega-links li a::before {
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+
+.navigation-items .mega-box .mega-links li a:hover:before {
+    width: 100%;
+}
+
+.content {
+    background-color: #fff;
+    border-style: solid;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 200px 130px 200px; 
+    top: 80px;
+    display: flex;
+    border-radius: 10px;
+    display: block;
+    padding: 50px;
+}
+.all .content h2 {
+    text-align: center;
+}
+.all .content img{
+    width: 300px;
+    height: 300px;
+    margin-left: 25px;
+    text-align: justify;
+    float:left;
+    border-radius: 10px;
+    justify-content: space-between;
+    margin: 8px 20px 3px 20px;
+}
+.all .content p {
+    margin: 15px 9px 3px 15px;
+    text-align: justify;
+}
+.all .content iframe {
+    width: 300px;
+    height: 200px;
+    margin-right: 25px;
+    text-align: justify;
+    float:right;
+    border-radius: 10px;
+    justify-content: space-between;
+    margin: 8px 9px 3px 20px;
+}
+.all .content h3 {
+    margin: 15px 9px 3px 15px;
+}
+
+.all .content h4 {
+    margin: 15px 9px 3px 15px;
+}
+.all .content video {
+    width: 300px;
+    height: 200px;
+    margin-right: 25px;
+    text-align: justify;
+    float:right;
+    border-radius: 10px;
+    justify-content: space-between;
+    margin: 8px 9px 3px 20px;
+}
+.all .content source {
+    text-align: justify;
+    margin: 8px 9px 3px 20px;
+}
+.all .content ul li {
+    margin: 8px 9px 3px 28px;
+    text-align: justify;
+}
+
+.contact {
+    border-radius: 100px;
+    background-color: #48c857;
+    height: 100px;
+    width: 60%;
+    text-align: center;
+    margin: 0  auto;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.contact:hover {
+    border: 2px solid black;
+    background-color: #07AF17;
+    transition: 0.2s ease;
+    box-shadow: 7px 7px 10px;
+}
+
+.contact .wa img {
+    width: 100px;
+    height: 95px;
+    padding: 0px 5px 13px 5px;
+}
+
+.contact .wa a {
+    margin: 20px;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    margin: 0px 0 0 -150px;
+    font-size: 2rem;
+}
+
+.contact1 {
+    border-radius: 100px;
+    background-color: #1278f3;
+    height: 100px;
+    width: 60%;
+    text-align: center;
+    margin: 0  auto;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.contact1:hover {
+    border: 2px solid black;
+    background-color: #156FDA;
+    transition: 0.2s ease;
+    box-shadow: 7px 7px 10px;
+}
+
+.contact1 .wa1 img {
+    width: 100px;
+    height: 95px;
+    padding: 0px 5px 13px 5px;
+}
+
+.contact1 .wa1 a {
+    margin: 20px;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    margin: 0px 0 0 -150px;
+    font-size: 2rem;
+}
+
+.contact2 {
+    border-radius: 100px;
+    background-color: #fe0183;
+    height: 100px;
+    width: 60%;
+    text-align: center;
+    margin: 0  auto;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.contact2:hover {
+    border: 2px solid black;
+    background-color: #EA0079;
+    transition: 0.2s ease;
+    box-shadow: 7px 7px 10px;
+}
+.contact2 .wa2 img {
+    width: 100px;
+    height: 95px;
+    padding: 0px 5px 13px 5px;
+}
+
+.contact2 .wa2 a {
+    margin: 20px;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    margin: 0px 0 0 -150px;
+    font-size: 2rem;
+}
+
+.contact3 {
+    border-radius: 100px;
+    background-color: #30a7de;
+    height: 100px;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.contact3:hover {
+    border: 2px solid black;
+    background-color: #34A2D5;
+    transition: 0.2s ease;
+    box-shadow: 7px 7px 10px;
+}
+.contact3 .wa3 img {
+    width: 100px;
+    height: 95px;
+    padding: 0px 5px 13px 5px;
+}
+
+.contact3 .wa3 a {
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    margin: 0px 0 0 -150px;
+    font-size: 2rem;
+}
+
+.content .help p {
+    text-align: center;
+    justify-content: center;
+}
+
+.btn {
+    text-align: center;
+    margin: 10px;
+    margin-top: 20px;
+}
+.btn .button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #032D7B;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.btn .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -10px;
+    transition: 0.5s;
+}
+
+.btn .button:hover span {
+    padding-right: 25px;
+}
+
+.btn .button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.btn .button a {
+    text-decoration: none;
+    color: #fff;
+}
+@media screen {
+    .content {
+        max-width: 100%;
+    }
+    .navigation {
+        max-width: 100%;
+    }
+}
